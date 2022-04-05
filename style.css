@@ -13,10 +13,15 @@
     --cor: #8E2424;
     --cor2: #667085;
     --cor3: #EAECF0;
+    --cor4: #C3191908;
+}
+
+.body, html {
+    font-family: var(--font);
 }
 
 .container {
-    margin: auto;
+    margin: 0 1.25rem 0 1.25rem;
 }
 
 header {
@@ -33,7 +38,6 @@ header {
 }
 
 .header__logo h1 {
-    font-family: var(--font);
     font-size: 1.12rem;
     font-weight: 500;
     padding: .2em;
@@ -49,7 +53,6 @@ header a {
     text-decoration: none;
     padding: .62em 1.25em;
     white-space: nowrap;
-    font-family: var(--font);
     font-weight: 500;
     color: var(--cor2);
 }
@@ -74,14 +77,12 @@ header a:hover {
 
 .cabecalho span {
     color: var(--cor);
-    font-family: var(--font);
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 1.5em;
 }
 
 .cabecalho h1 {
-    font-family: var(--font);
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
@@ -90,7 +91,6 @@ header a:hover {
 
 .cabecalho p {
     max-width: 790px;
-    font-family: var(--font);
     font-size: 1.25rem;
     color: var(--cor2);
     text-align: center;
@@ -109,21 +109,18 @@ header a:hover {
 
 .metricas__metrica h1 {
     color: var(--cor);
-    font-family: var(--font);
     font-size: 3.75rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 .metricas__metrica h2 {
-    font-family: var(--font);
     font-size: 1.12rem;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 
 .metricas__metrica p {
-    font-family: var(--font);
     color: var(--cor2);
     font-size: 1rem;
     line-height: 1.5em;
@@ -145,7 +142,6 @@ header a:hover {
 
 .vagas__talentos span {
     color: var(--cor);
-    font-family: var(--font);
     font-weight: 500;
     font-size: 1rem;
     background: rgba(142, 36, 36, 0.05);
@@ -155,14 +151,13 @@ header a:hover {
 }
 
 .vagas h1 {
-    font-family: var(--font);
     font-weight: 600;
     font-size: 2.25rem;
+    text-align: center;
     margin-bottom: 1.25rem;
 }
 
 .vagas p {
-    font-family: var(--font);
     color: var(--cor2);
     font-size: 1.25rem;
     margin-bottom: 4rem;
@@ -179,36 +174,74 @@ header a:hover {
 }
 
 .vagas__vagas-abertas__secao {
-    margin-bottom: 64px;
+    margin-bottom: 4em;
 }
 
 .vagas__vagas-abertas__secao h1 {
-    font-family: var(--font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .vagas__vagas-abertas__secao__job-post {
     border: 1px solid var(--cor3);
     border-radius: 1em;
-    padding: 24px;
-    margin-bottom: 24px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .vagas__vagas-abertas__secao__job-post h2 {
-    font-family: var(--font);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .vagas__vagas-abertas__secao__job-post span {
-    font-family: var(--font);
     color: var(--cor2);
     font-size: 1em;
     font-weight: 500;
-    margin-right: 24px;
+    margin-right: 1.5rem;
+}
+
+.depoimentos {
+    background-color: var(--cor4);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 4em;
+    border-radius: 1em;
+}
+
+.depoimentos span {
+    color: var(--cor);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.depoimentos h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.depoimentos img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+}
+
+.depoimentos h2 {
+    font-weight: 500;
+    margin-bottom: 0.25em;
+}
+
+.depoimentos p {
+    color: var(--cor2);
+    font-size: 0.875rem;
 }
 
 @media (min-width:600px) {
@@ -227,7 +260,7 @@ header a:hover {
     }
 
     nav {
-        margin-top: .5em;
+        margin-top: 0.8em;
     }
 
     .menu-1 {
@@ -241,6 +274,7 @@ header a:hover {
 
 @media (min-width:900px) {
     .container {
+        margin: 0 auto;
         width: 80%;
         max-width: 1440px;
     }
